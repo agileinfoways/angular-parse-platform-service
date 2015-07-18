@@ -3,20 +3,26 @@ Angular service that facilitates usage of parse plateform services.
 
 ## How to use
 
-Open `parse-service.js` and add your app keys:
+**Include** latest version of **Parse JavaScript SDK** in your page.
+
+```HTML
+<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+```
+
+Open `parse-service.js` and **add your app keys**:
 
 ```javascript
 var app_id = "YOUR_APP_ID";
 var js_key = "YOUR_JAVASCRIPT_KEY";
 ```
 
-Inject `ngParseModule` into your app:
+**Inject** `ngParseModule` into your app:
 
 ```javascript
 var app = angular.module('myApp', ['ngParseModule']);
 ```
 
-This is how use in controller like this:
+**Use it in controller** like this:
 
 ```javascript
 angular.module('myApp').controller('yourCtrl', function($scope, ParseService) {
