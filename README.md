@@ -3,6 +3,13 @@ Angular service that facilitates usage of parse plateform services.
 
 ## How to use
 
+Open `parse-service.js` and add your app keys:
+
+```javascript
+var app_id = "YOUR_APP_ID";
+var js_key = "YOUR_JAVASCRIPT_KEY";
+```
+
 Inject `ngParseModule` into your app:
 
 ```javascript
